@@ -9,10 +9,12 @@ class PostController extends Controller
 {
     public function GetAllPosts() {
         return Post::all();
+        return redirect('/');
     }
 
     public function GetPost(Post $post) {
         return $post;
+        return redirect('/');
     }
 
     public function CreatePost(Request $request) {
@@ -25,6 +27,7 @@ class PostController extends Controller
         $incomingFields['content'] = strip_tags($incomingFields['content']);
         
         Post::create($incomingFields);
+        return redirect('/');
     }
 
     public function EditPost(Request $request, Post $post) {
@@ -37,9 +40,11 @@ class PostController extends Controller
         $incomingFields['content'] = strip_tags($incomingFields['content']);
         
         $post->update($incomingFields);
+        return redirect('/');
     }
 
     public function DeletePost(Post $post) {
         $post->delete();
+        return redirect('/');
     }
 }
