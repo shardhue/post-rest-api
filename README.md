@@ -24,6 +24,13 @@ Edits a post with the id `{id}`.
 
 Deletes a post with the id `{id}`.
 
+## Database Models
+
+### Post
+
+- title: string
+- content: string
+
 ## Local Setup
 
 1. Clone the repository:
