@@ -2,6 +2,28 @@
 
 A REST API to fetch, create, update, and delete posts.
 
+## API Endpoints
+
+### GET /api/posts
+
+Fetches all posts.
+
+### GET /api/posts/{id}
+
+Fetches a post with the id `{id}`.
+
+### POST /api/posts
+
+Creates a post.
+
+### PATCH /api/posts/{id}
+
+Edits a post with the id `{id}`.
+
+### DELETE /api/posts/{id}
+
+Deletes a post with the id `{id}`.
+
 ## Local Setup
 
 1. Clone the repository:
@@ -77,24 +99,10 @@ php artisan serve
 
 The project should now be up and running at the web server provided by `php artisan serve`.
 
-## API Endpoints
+## Front-End
 
-### GET /api/posts
+![image](github.png)
 
-Fetches all posts.
+The project also has a simple front-end that can be used to interact with the API.
 
-### GET /api/posts/{id}
-
-Fetches a post with the id `{id}`.
-
-### POST /api/posts
-
-Creates a post.
-
-### PATCH /api/posts/{id}
-
-Edits a post with the id `{id}`.
-
-### DELETE /api/posts/{id}
-
-Deletes a post with the id `{id}`.
+It is located at the base `/` URL of the `php artisan serve` web server.
