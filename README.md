@@ -57,11 +57,7 @@ composer install
 npm install
 ```
 
-5. Create a .env file:
-
-```
-cp .env.example .env
-```
+5. Create a .env file by making a copy of .env.example and renaming it to .env.
 
 6. Generate an app key:
 
